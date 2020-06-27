@@ -1,0 +1,52 @@
+import styled from 'styled-components';
+
+interface Props {
+ selected ?: boolean; 
+}
+
+export const Container = styled.div<Props>`
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ justify-items: center;
+ vertical-align: center; 
+
+ height: 32px;
+ padding: 0px 4px 0px 0px;
+
+ background-color: ${props => props.selected ? `var(--quinary)` : `transparent`};
+ color: ${props => props.selected ? `var(--white)` : ` var(--gray)`};
+ 
+&:hover{
+  background-color: var(--quinary);
+  cursor: pointer;
+  div {
+    color: var(--white);
+    
+  }
+} 
+
+& div:last-child{
+  display: ${props => props.selected ? `flex` : `none`};
+}
+
+&:hover div:last-child{
+  display: flex;
+}
+
+`;
+
+export const Title = styled.div`
+  & span:last-child{
+    padding-left: 4px;
+  }
+`;
+
+export const Icons = styled.div`
+  img{
+    cursor: pointer;
+    &:first-child{
+      padding: 0px 4px;
+    }
+  }
+`;
