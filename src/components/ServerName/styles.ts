@@ -11,6 +11,9 @@ export const Container = styled.div`
   padding: 0px 8px;
 
   color: var(--white);
+  font-size: 8px;
+  font-weight: bold;
+
   background-color: var(--quaternary);
 
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);

@@ -16,6 +16,7 @@ export const Button = styled.div<Props>`
   margin-bottom: 8px;
 
   background-color: ${props => props.isHome ? `var(--rocketseat)` : `var(--primary)`};
+  transition: background-color 0.2s, border-radius 0.2s;
 
   position: relative;
 
@@ -41,18 +42,27 @@ export const Button = styled.div<Props>`
   }
 
   &::after{
-    width: 16px;
+    background-color: var(--notification);
+    width: auto;
     height: 16px;
 
+    padding: 0 4px;
+    
     position: absolute;
     right: -4px; /* -4px por causa da borda */
     bottom: -4px; /* -4px por causa da borda */
     
-    background-color: var(--notification);
-    border-radius: 50%;
-    border: 4px solid var(--tertiary);
-    content: '';
-    display: ${props => props.hasNotifications ? `inline` : `none`};
+    border-radius: 12px;
+    border: 4px solid var(--quaternary);
+
+    text-align: center;
+    vertical-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--white);
+
+    content: '${props => props.mentions ? props.mentions : 0}';
+    display: ${props => props.mentions ? `inline` : `none`};
   }
 
   transition: border-radius 0.2s, background-color 0.2;

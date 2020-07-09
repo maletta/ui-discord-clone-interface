@@ -26,7 +26,7 @@ export const Container = styled.div`
   
 
   -moz-border-radius:5px;
-    -webkit-border-radius:5px;
+  -webkit-border-radius:5px;
 
 
   & ::-webkit-scrollbar {

@@ -5,7 +5,7 @@ import { Container } from './styles';
 const ServerName: React.FC = () => {
   return (
     <Container>
-      <span>Servidor do Maletta</span>
+      <h1>Servidor do Maletta</h1>
     </Container>
   )
 }

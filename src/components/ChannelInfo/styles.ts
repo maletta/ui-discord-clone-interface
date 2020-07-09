@@ -8,7 +8,7 @@ export const Container = styled.div`
   padding: 0px 0px 0px 17px;
   color: var(--gray);
 
-  background-color: var(--quaternary);
+  background-color: var(--primary);
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 
   z-index: 999;

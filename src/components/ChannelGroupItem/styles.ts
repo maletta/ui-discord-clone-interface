@@ -15,14 +15,16 @@ export const Container = styled.div<Props>`
  padding: 0px 4px 0px 0px;
 
  background-color: ${props => props.selected ? `var(--quinary)` : `transparent`};
- color: ${props => props.selected ? `var(--white)` : ` var(--gray)`};
+ color: ${props => props.selected ? `var(--white)` : ` var(--senary)`};
+
+ transition: background-color 0.2s;
  
 &:hover{
   background-color: var(--quinary);
   cursor: pointer;
   div {
     color: var(--white);
-    
+    opacity: 0.7;
   }
 } 
 
