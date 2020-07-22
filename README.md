@@ -1,6 +1,6 @@
 # Recriação da interface do discord
 
-Foobar is a Python library for dealing with word pluralization.
+Recriação da interface de chat com lista de servidor e de membros do servidor sem consumo de apis.
 
 ## Instalação
 
