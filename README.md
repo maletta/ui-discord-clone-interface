@@ -14,4 +14,4 @@ yarn install
 
 ## Screenshot da interface
 
-![](https://github.com/maletta/ui-discord-interface-clone/blob/master/src/assets/app_demonstration.gif)
+![](https://github.com/maletta/ui-discord-interface-clone/blob/master/src/assets/discord_demonstration.png)
