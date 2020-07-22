@@ -14,4 +14,4 @@ yarn install
 
 ## Screenshot da interface
 
-![](https://github.com/maletta/ui-discord-interface-clone/blob/master/src/assets/forca_covid.png)
+![](https://github.com/maletta/ui-discord-interface-clone/blob/master/src/assets/app_demonstration.gif)
