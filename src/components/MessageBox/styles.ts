@@ -18,29 +18,26 @@ export const Container = styled.div`
   }
 
 
-  overflow-y: scroll;
-  
-  scrollbar-width: thin;
-  scrollbar-color: var(--tertiary) var(--secondary);
-  scroll-behavior: smooth;
-  
+/* Scrollbar para firefox */
+overflow-y: scroll;
+scrollbar-width: thin;
+scrollbar-color: var(--tertiary) var(--secondary); 
+scroll-behavior: smooth;
 
-  -moz-border-radius:5px;
-  -webkit-border-radius:5px;
+/*primeira cor é a thumb, segunda cor é o track  */
 
-
-  & ::-webkit-scrollbar {
-    width: 15px;
-    height: 15px;
+/* Scrollbar para chrome */
+::-webkit-scrollbar{
+  width: 8px;
 }
 
-  & ::-webkit-scrollbar-track-piece  {
-    background-color: #C2D2E4;
+::-webkit-scrollbar-thumb{
+  background-color: var(--tertiary);
+  border-radius: 10px;
 }
 
-  & ::-webkit-scrollbar-thumb:vertical {
-    height: 30px;
-    background-color: #0A4C95;
+::-webkit-scrollbar-track{
+  background-color: var(--secondary);
 }
 
 

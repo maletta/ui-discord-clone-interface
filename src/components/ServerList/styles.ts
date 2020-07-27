@@ -10,7 +10,7 @@ export const Container = styled.div`
   background-color: var(--tertiary);
   padding: 11px 0px;
 
-  max-height: 100vh; /* tamanho máx 100% tamanho da tela */
+  max-height: calc(100vh); /* tamanho máx 100% tamanho da tela */
   overflow-y: scroll; /* permite scroll caso tamanho passe de 100vh */
 
   scrollbar-width: none; /* não exibir scrollbar firefox */
